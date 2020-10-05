@@ -6,16 +6,18 @@
 </head>
 <body>
 
-<input type="submit" id="clicktome" onclick="click_me()" value="Click me!">
+<input type="submit" id="clicktome" value="Click me!">
 
 
 
 </body>
 
 <script>
-    function click_me()
+    var getclick = document.getElementById("clicktome");
+    getclick.addEventListener("click", click);
+    function click()
     {
-        alert("Hello world!");
+        alert("hello world.")
 
     }
 

@@ -24,12 +24,67 @@
 
 <form action="/action_page.html">
     So thich:<br>
-    <label><input name="hobby" value="travel" type="checkbox"/>Du lich</label>
+    <input type="hidden" name="hash" value="xxx">
+    <label><input name="hobby" value="travel" type="radio"/>Du lich</label>
     <br>
-    <label><input name="hobby" value="sport" type="checkbox"/> THe thao</label>
+    <label><input name="hobby" value="sport" type="radio"/> THe thao</label>
     <br>
-    <label><input name="hobby" value="cooking" type="checkbox"/> Nau an</label>
+    <label><input name="hobby" value="cooking" type="radio"/> Nau an</label>
 </form>
+
+<form action="/action_page.php">
+    Account: <input name="account" value="admin" type="text"/><br/>
+    Sở thích:<br/>
+    <label><input name="hobby" value="travel" type="radio" checked/> Du lịch</label> <br/>
+    <label><input name="hobby" value="sport" type="radio"/> Thể thao</label> <br/>
+    <label><input name="hobby" value="cooking" type="radio"/> Nấu ăn</label> <br/>
+    <input type="reset" value="Reset"/>
+</form>
+
+
+<form method="POST">
+    Account: <input name="account" value="admin" type="text"/><br/>
+    Sở thích:<br/>
+    <label><input name="hobby" value="travel" type="radio" checked/> Du lịch</label> <br/>
+    <label><input name="hobby" value="sport" type="radio"/> Thể thao</label> <br/>
+    <label><input name="hobby" value="cooking" type="radio"/> Nấu ăn</label> <br/>
+    <input type="submit" value="Send data"/>
+</form>
+
+
+<form method="POST">
+    Account: <input name="account" value="admin" type="text"/><br/>
+    Sở thích:<br/>
+    <label><input name="hobby" value="travel" type="radio" checked/> Du lịch</label> <br/>
+    <label><input name="hobby" value="sport" type="radio"/> Thể thao</label> <br/>
+    <label><input name="hobby" value="cooking" type="radio"/> Nấu ăn</label> <br/>
+    <input type="submit" value="Send data"/>
+</form>
+
+
+<form method="POST">
+    <button type="button">
+        <img src="http://codegym.vn/wp-content/uploads/2017/03/CodeGym-3-02-copy.jpg" width="200px"/>
+    </button>
+</form>
+
+
+
+<form method="POST">
+    <textarea cols="50" rows="4">This is a very very long text text text text text text text text text text text text </textarea>
+</form>
+
+
+<select name="city">
+    <option value="HN">Ha Noi</option>
+    <option value="BN">Bac Ninh</option>
+    <option value="HCM">Sai Gon</option>
+    <option value="TH"> THanh Hoa</option>
+
+
+</select>
+
+
 
 
 

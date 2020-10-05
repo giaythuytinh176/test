@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d175ece0-30d5-4245-a47d-00baede9471e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phuongthucpostget.html" beforeDir="false" afterPath="$PROJECT_DIR$/phuongthucpostget.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -29,6 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
     <property name="settings.editor.splitter.proportion" value="0.24172518" />
@@ -66,6 +69,8 @@
       <workItem from="1601713634817" duration="5527000" />
       <workItem from="1601781327614" duration="255000" />
       <workItem from="1601797696632" duration="3854000" />
+      <workItem from="1601825298060" duration="243000" />
+      <workItem from="1601859633147" duration="168000" />
     </task>
     <servers />
   </component>

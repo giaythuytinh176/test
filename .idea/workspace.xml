@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d175ece0-30d5-4245-a47d-00baede9471e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobangdongian.html" beforeDir="false" afterPath="$PROJECT_DIR$/taobangdongian.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +74,9 @@
       <workItem from="1601865238203" duration="11381000" />
       <workItem from="1601885487517" duration="978000" />
       <workItem from="1601890354770" duration="1219000" />
+      <workItem from="1601898830883" duration="850000" />
+      <workItem from="1601904639814" duration="293000" />
+      <workItem from="1601916856971" duration="1845000" />
     </task>
     <servers />
   </component>
@@ -92,11 +94,11 @@
     <state x="443" y="177" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1601880158939" />
     <state x="1493" y="282" key="SettingsEditor/0.23.2560.1318@0.23.2560.1318" timestamp="1601574766595" />
     <state x="1493" y="283" key="SettingsEditor/0.23.2560.1321@0.23.2560.1321" timestamp="1601574559480" />
-    <state x="246" y="401" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601892176615">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="437" y="641" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601920986635">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="246" y="401" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1601892176615" />
-    <state x="437" y="641" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1440@0.0.2560.1440" timestamp="1601804732377" />
+    <state x="437" y="641" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1440@0.0.2560.1440" timestamp="1601920986635" />
     <state x="168" y="78" width="598" height="822" key="find.popup" timestamp="1601881034917">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

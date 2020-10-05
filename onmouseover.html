@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 id="mouseO1" onmouseover="mouseover()" onmouseout="mouseout1()">THis is a text</h1>
+<br>
+<h2 id="mouseO2" onmouseover="mouseover2()" onmouseout="mouseout2()">THis is a text 2</h2>
+<br>
+<h3 id="mouseO3" onmouseover="mouseover3()" onmouseout="mouseout3()">THis is a text 3</h3>
+
+
+
+
+
+
+<!--Hien thi theo dong cua chu~ -->
+<script>
+    function mouseout1()
+    {
+        document.getElementById("mouseO1").style.color = "black";
+    }
+    function mouseover()
+    {
+        document.getElementById("mouseO1").style.color = getRandomColor();
+    }
+
+
+    function mouseout2()
+    {
+        document.getElementById("mouseO2").style.color = "black";
+    }
+    function mouseover2()
+    {
+        document.getElementById("mouseO2").style.color = getRandomColor();
+    }
+
+    function mouseout3()
+    {
+        document.getElementById("mouseO3").style.color = "black";
+    }
+    function mouseover3()
+    {
+        document.getElementById("mouseO3").style.color = getRandomColor();
+    }
+
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+</script>
+
+
+
+</body>
+</html>

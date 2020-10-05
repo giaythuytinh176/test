@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form id="mySelect" onchange="do_anything()">
+
+    <input type="checkbox" value="VN">Vietnam<br>
+    <input type="checkbox" value="US">US
+
+
+</form>
+
+<script>
+    function do_anything()
+    {
+        var selectValue = document.getElementById("mySelect").value;
+        alert(selectValue);
+    }
+
+</script>
+
+</body>
+</html>

@@ -33,7 +33,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.24172518" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -71,7 +71,7 @@
       <workItem from="1601797696632" duration="3854000" />
       <workItem from="1601825298060" duration="243000" />
       <workItem from="1601859633147" duration="4629000" />
-      <workItem from="1601865238203" duration="2150000" />
+      <workItem from="1601865238203" duration="5303000" />
     </task>
     <servers />
   </component>
@@ -83,23 +83,28 @@
       <screen x="0" y="23" width="2560" height="1321" />
     </state>
     <state x="164" y="323" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1321@0.23.2560.1321" timestamp="1601580880738" />
-    <state x="1493" y="282" key="SettingsEditor" timestamp="1601574766595">
-      <screen x="0" y="23" width="2560" height="1318" />
+    <state x="443" y="177" key="SettingsEditor" timestamp="1601869979204">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="443" y="177" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1601869979204" />
     <state x="1493" y="282" key="SettingsEditor/0.23.2560.1318@0.23.2560.1318" timestamp="1601574766595" />
     <state x="1493" y="283" key="SettingsEditor/0.23.2560.1321@0.23.2560.1321" timestamp="1601574559480" />
     <state x="437" y="641" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601804732377">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="437" y="641" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1440@0.0.2560.1440" timestamp="1601804732377" />
+    <state x="60" y="39" width="598" height="822" key="find.popup" timestamp="1601869273405">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="60" y="39" width="598" height="822" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1601869273405" />
     <state x="365" y="315" key="run.anything.popup" timestamp="1601713709155">
       <screen x="0" y="23" width="2560" height="1318" />
     </state>
     <state x="365" y="315" key="run.anything.popup/0.23.2560.1318@0.23.2560.1318" timestamp="1601713709155" />
-    <state x="177" y="252" width="670" height="463" key="search.everywhere.popup" timestamp="1601865634356">
+    <state x="177" y="252" width="670" height="463" key="search.everywhere.popup" timestamp="1601869005918">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="177" y="252" width="670" height="463" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1601865634356" />
+    <state x="177" y="252" width="670" height="463" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1601869005918" />
     <state x="314" y="403" width="670" height="739" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1601805759450" />
     <state x="177" y="246" width="670" height="410" key="search.everywhere.popup/0.23.1440.798@0.23.1440.798" timestamp="1601860288737" />
     <state x="314" y="392" width="670" height="676" key="search.everywhere.popup/0.23.2560.1318@0.23.2560.1318" timestamp="1601714468156" />

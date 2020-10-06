@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<button type="button" onclick="showMess();">Click to me</button>
+<br>
+<br><br>
+<button type="button" id="ShowMess">Click to me2</button>
+
+
+
+
+
+
+<script type="text/javascript">
+    function showMess()
+    {
+        alert("Here is new text");
+
+    }
+
+    var GetMess = document.getElementById("ShowMess");
+    GetMess.addEventListener("click", output);
+    function output()
+    {
+       alert("Here is second way to change");
+
+    }
+
+
+
+</script>
+
+</body>
+</html>

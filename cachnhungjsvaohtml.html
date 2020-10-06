@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<h1 id="demo">A Web Page</h1>
+
+<input type="button" onclick="changeable()" value="click to change">
+
+
+<h2 id="demo2">A Web Page 2</h2>
+
+<input type="button" id="demo2" value="click to change 2">
+
+<br>
+<button onclick="alert('Xin chào bạn!');">Click me</button>
+</body>
+
+<p id="demoX">Click here to change me</p>
+<button type="button" onclick='document.getElementById("demoX").innerHTML = "Hello js!"'>cick to me!</button>
+
+
+<script type="text/javascript">
+
+    function changeable()
+    {
+        document.getElementById("demo").innerHTML = "here is new text file";
+
+    }
+
+    var changetext = document.getElementById("demo2");
+    changetext.addEventListener("click", func_change);
+
+    function func_change()
+    {
+        document.getElementById("demo2").innerHTML = "here is second way to change text";
+    }
+
+
+
+
+</script>
+
+
+
+
+
+</html>

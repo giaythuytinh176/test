@@ -6,10 +6,10 @@
 </head>
 <body>
 
-<form id="mySelect" onchange="do_anything()">
+<form onchange="do_anything()">
 
-    <input type="checkbox" value="VN">Vietnam<br>
-    <input type="checkbox" value="US">US
+    <input id="mySelect" type="checkbox" value="VN">Vietnam<br>
+    <input id="mySelect" type="checkbox" value="US">US
 
 
 </form>
@@ -18,7 +18,7 @@
     function do_anything()
     {
         var selectValue = document.getElementById("mySelect").value;
-        alert(selectValue);
+        console.log(selectValue);
     }
 
 </script>

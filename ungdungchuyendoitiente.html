@@ -9,28 +9,77 @@
 
 
 <form>
-Amount <input type="text" id="amount" value="1" size="10">  From Currency <select id="Fromcurrency">
+Amount <input type="text" id="aMount" value="1" placeholder="1" size="10">
+    From Currency
+<select id="fromCurrency" onchange="get_value_fromCur()">
     <option value="vnd">Viet Nam Dong</option>
-
-</select>
-    To Currency <select id="Tocurrency">
     <option value="usd">USD</option>
 </select>
+    To Currency
+<select id="toCurrency" onchange="get_value_toCur()">
+    <option value="usd">USD</option>
+    <option value="vnd">Viet Nam Dong</option>
+</select>
 
-<button type="button" value="Convert" onclick="ConvertCur()">Convert</button>
+<button type="button" value="Convert" onclick="convertCur()">Convert</button>
 
 
 
 </form>
 
 <script>
-    var amount = document.getElementById("amount").value;
-    var fromCur = document.getElementById("Fromcurrency").value;
-    var toCur = document.getElementById("Tocurrency").value;
-    function ConvertCur()
+    let aMount = document.getElementById("aMount").value;
+    let fromCur = get_value_fromCur();
+    let toCur = get_value_toCur();
+
+    console.log(fromCur);
+    console.log(toCur);
+
+
+    function get_value_fromCur()
     {
+        let valueFroCur = document.getElementById("fromCurrency").value;
+        //alert(valueFroCur) ;
+        console.log(valueFroCur);
+        return valueFroCur;
+    }
 
+    function get_value_toCur()
+    {
+        let valueToCur = document.getElementById("toCurrency").value;
+        //alert(valueToCur);
+        console.log(valueToCur);
+        return valueToCur;
+    }
 
+    function convertCur()
+    {
+        console.log(fromCur);
+        console.log(toCur);
+        if (fromCur == "vnd" && toCur == "usd")
+        {
+            let convertAmount = aMount / 23000;
+            document.write("Doi " + aMount + " VND sang USD la: " + convertAmount + " dollar.");
+        }
+        else if (fromCur == "vnd" && toCur == "vnd")
+        {
+            let convertAmount = aMount * 1;
+            document.write("Doi " + aMount + " VND sang VND la: " + convertAmount + " Nghin dong.");
+        }
+        else if (fromCur == "usd" && toCur == "usd")
+        {
+            let convertAmount = aMount * 1;
+            document.write("Doi " + aMount + " USD sang USD la: " + convertAmount + " do.");
+        }
+        else if (fromCur == "usd" && toCur == "vnd")
+        {
+            let convertAmount = aMount * 23000;
+            document.write("Doi " + aMount + " USD sang VND la: " + convertAmount + " Nghin dong.");
+        }
+        else
+        {
+            alert("Du lieu nhap vao ko hop le.");
+        }
 
     }
 

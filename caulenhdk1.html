@@ -7,18 +7,34 @@
 <body>
 
 
+<p id="getDay"></p>
 
 <script>
-    let a = 1;
-    switch (a) {
-        case 1:
-            output = "Day la so a"
+
+    let opera = "/";
+    let a = 11;
+    let b = 5;
+
+    switch (opera){
+        case "+" :
+            alert(" a + b la " + (a+b))
             break;
-        case 2:
-            output = "Day k fai so a"
+        case "-" :
+            alert(" a - b la " + (a-b))
             break;
+        case "*" :
+            alert ("a * b la " + (a * b)) // ko dong mo ngoac se bi loi~
+            break;
+        case "/" :
+            alert(" a / b la " + (a/b))
+            break;
+        default :
+            alert("Khong co phep toan nao nhu v")
+            break; // co can thiet break o default ko ?
     }
-    console.log(output);
+
+
+
 
 
 

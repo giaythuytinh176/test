@@ -9,16 +9,16 @@
 
 
 <form>
-Amount <input type="text" id="aMount" value="1" placeholder="1" size="10">
+Amount <input type="text" id="aMount"  placeholder="Nhap so tien can doi" size="20">
     From Currency
-<select id="fromCurrency" onchange="get_value_fromCur()">
-    <option value="vnd">Viet Nam Dong</option>
+<select id="fromCurrency">
     <option value="usd">USD</option>
+    <option value="vnd">Viet Nam Dong</option>
 </select>
     To Currency
-<select id="toCurrency" onchange="get_value_toCur()">
-    <option value="usd">USD</option>
+<select id="toCurrency">
     <option value="vnd">Viet Nam Dong</option>
+    <option value="usd">USD</option>
 </select>
 
 <button type="button" value="Convert" onclick="convertCur()">Convert</button>
@@ -28,32 +28,25 @@ Amount <input type="text" id="aMount" value="1" placeholder="1" size="10">
 </form>
 
 <script>
-    let aMount = document.getElementById("aMount").value;
-    let fromCur = get_value_fromCur();
-    let toCur = get_value_toCur();
-
-    console.log(fromCur);
-    console.log(toCur);
+    // de cac bien lay gia tri o ngoai nay co dc ko
 
 
-    function get_value_fromCur()
-    {
-        let valueFroCur = document.getElementById("fromCurrency").value;
-        //alert(valueFroCur) ;
-        console.log(valueFroCur);
-        return valueFroCur;
-    }
-
-    function get_value_toCur()
-    {
-        let valueToCur = document.getElementById("toCurrency").value;
-        //alert(valueToCur);
-        console.log(valueToCur);
-        return valueToCur;
-    }
+    //console.log(fromCur);
+    //console.log(toCur);
 
     function convertCur()
     {
+        let aMount = document.getElementById("aMount").value;
+        let fromCur = document.getElementById("fromCurrency").value;
+        let toCur = document.getElementById("toCurrency").value;
+
+        if (!aMount.length || isNaN(aMount)){
+            document.write("Ban can nhap so tien can doi or so tien ko hop le.");
+            return;
+        }
+
+        aMount = parseInt(aMount);
+
         console.log(fromCur);
         console.log(toCur);
         if (fromCur == "vnd" && toCur == "usd")

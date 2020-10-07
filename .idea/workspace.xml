@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8034276e-ab39-4ae1-8f85-27b212b69261" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/bienkieudulieutoantu.html" beforeDir="false" afterPath="$PROJECT_DIR$/bienkieudulieutoantu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bieudiendulieutoantu2.html" beforeDir="false" afterPath="$PROJECT_DIR$/bieudiendulieutoantu2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bieukieudulieutoantu2.html" beforeDir="false" afterPath="$PROJECT_DIR$/bieukieudulieutoantu2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doitiente.html" beforeDir="false" afterPath="$PROJECT_DIR$/doitiente.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sukhienchuot.html" beforeDir="false" afterPath="$PROJECT_DIR$/sukhienchuot.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ungdungmaytinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/ungdungmaytinh.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +64,8 @@
       <option name="presentableId" value="Default" />
       <updated>1602032777832</updated>
       <workItem from="1602032780059" duration="173000" />
-      <workItem from="1602032959014" duration="10252000" />
+      <workItem from="1602032959014" duration="11723000" />
+      <workItem from="1602056799526" duration="5285000" />
     </task>
     <servers />
   </component>
@@ -80,6 +82,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602036634648">

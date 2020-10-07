@@ -9,14 +9,23 @@
 <form>
     <img src="img/bienkieudulieutoantu.png" id="ball" width="200px" alt="anh bi loi~"/>
     <br>Click button below to move the image to right
-    <br><input type="button" onclick="MyChangeWidth()" value="Click me!">
+    <br><input type="button" value="Move right!" onclick="moveRight();"/>
 
 
 </form>
 <script>
     let imgObj = null;
     imgObj = document.getElementById('ball');
+    window.onload = init;
 
+    function init() {
+        imgObj = document.getElementById('ball');
+        imgObj.style.position = 'relative';
+        imgObj.style.left = '0px';
+    }
+    function moveRight() {
+        imgObj.style.left = parseInt(imgObj.style.left) + 20 + 'px';
+    }
 
 
 

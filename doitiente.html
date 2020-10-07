@@ -22,6 +22,7 @@ To Currency <select id="toCur">
     <option value="23000">VND</option>
 </select>
 <input type="button" value="Convert" onclick="clickToConvert()">
+    <input type="text" id="kq"/>
 </form>
 
 
@@ -35,7 +36,7 @@ function clickToConvert()
     let toCur = document.getElementById("toCur").value;
     let fromCur = document.getElementById("fromCur").value;
     let results = aMount * toCur / fromCur;
-    document.getElementById("result").innerHTML = "So tien doi la: " + results;
+    document.getElementById("kq").value = "So tien doi la: " + results;
 }
 
 

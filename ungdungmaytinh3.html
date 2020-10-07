@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Title</title>
+        </head>
+<body>
+<style>
+    td{
+        width: 50px;
+        height: 50px;
+    }
+
+    .specialCol{
+        text-align: center;
+    }
+
+</style>
+<h1>Calculator</h1>
+
+<table border="1px solid black" cellspacing="0">
+    <tr>
+        <td colspan="2" class="specialCol"><input type="text" id="numberOne" onmouseout="showValue1()" placeholder="Nhap so thu 1 vao day"></td>
+        <td colspan="4" class="specialCol"><input type="text" id="numberTwo" onmouseout="showValue2()" placeholder="Nhap so thu 2 vao day"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="Addition(+)" id="addition" onclick="phepTinh('+')"></td>
+        <td><input type="button" value="Substraction(-)" id="subtraction" onclick="phepTinh('-')"></td>
+        <td><input type="button" id="multiplication" onclick="phepTinh('*')" value="Multiplication(.)"></td>
+        <td><input type="button" id="division" onclick="phepTinh('/')" value="Division(/)"></td>
+    </tr>
+
+
+</table>
+    <input type="reset" value="Reset" onclick="reSet()">
+
+
+<p id="resetF">
+<p id="soThu1">So thu nhat cua ban la: </p><p id="nBer1"></p>
+<p id="soThu2">So thu hai cua ban la: </p><p id="nBer2"></p>
+<p id="warning"></p>
+<p id="results"></p>
+</p>
+<script>
+    // Co cach nao de khi nhap 1 so hien luon phia duoi ko, 2 so hien giong nhau
+    // lam nao bam reset de xoa het phan du lieu phia duoi
+    function phepTinh(operator)
+    {
+        let numberOne = +document.getElementById("numberOne").value;
+        let numberTwo = +document.getElementById("numberTwo").value;
+        // neu bo value di thi dung console.log ko thay show gia tri kem value?
+        //document.write("So thu nhat cua ban la: " + numberOne);
+        document.getElementById("soThu1").innerHTML = "So thu nhat cua ban la: " + numberOne;
+        //document.write("<br>");
+
+        //document.write("So thu hai cua ban la: " + numberTwo);
+        document.getElementById("soThu2").innerHTML = "So thu hai cua ban la: " + numberTwo;
+
+        //document.write("<br>");
+        console.log(numberOne);
+        console.log(numberTwo);
+
+       // if (!numberOne.length || !numberTwo.length)
+        {
+            //document.write("Ban can nhap ca 2 so de tinh<br>");
+          //  document.getElementById("warning").innerHTML = "Ban can nhap ca 2 so de tinh<br>";
+          //  return;
+        }
+
+        if (isNaN(numberOne) || isNaN(numberTwo))
+        {
+            //document.write("Mot trong 2 so ko phai la 1 so.<br>");
+            document.getElementById("warning").innerHTML = "Mot trong 2 so ko phai la 1 so.<br>";
+            return;
+        }
+
+        let results;
+        if (operator == "+")
+        {
+            results = (numberOne) + (numberTwo);
+
+        }
+        else if (operator == "-")
+        {
+            results = (numberOne) - (numberTwo);
+
+        }
+        else if (operator == "*")
+        {
+            results = (numberOne) * (numberTwo);
+
+        }
+        else if (operator == "/")
+        {
+            results = (numberOne) / (numberTwo);
+
+        }
+        //document.write("Tong cua 2 so la: " + results);
+        document.getElementById("results").innerHTML = "Ket qua cua phep tinh " + operator + " cua 2 so la: " + results;
+    }
+    function reSet()
+    {
+        document.getElementById("resetF").innerHTML = "The form was reset";
+        document.getElementById("results").innerHTML = '';
+        document.getElementById("nBer1").innerHTML = '';
+        document.getElementById("nBer2").innerHTML = '';
+        document.getElementById("soThu1").innerHTML = '';
+        document.getElementById("soThu2").innerHTML = '';
+    }
+
+
+
+    function showValue1()
+    {
+        document.getElementById("nBer1").innerHTML = document.getElementById("numberOne").value;
+    }
+
+    function showValue2()
+    {
+        document.getElementById("nBer2").innerHTML = document.getElementById("numberTwo").value;
+    }
+    //console.log(numberOne);
+
+
+</script>
+
+
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let year = parseInt(prompt("Nhap nam ban can kiem tra."));
+    if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)))
+    {
+        alert("Nam " + year + " la nam nhuan");
+    }
+    else
+    {
+        alert("Nam " + year + " ko phai nam nhuan");
+    }
+
+</script>
+
+
+</body>
+</html>

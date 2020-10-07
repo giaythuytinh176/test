@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 align="center">Check your BMI</h1>
+<table align="center" border="1px solid black" cellspacing="0">
+    <tr>
+        <td>BMI</td>
+        <td>Interpretation</td>
+    </tr>
+    <tr>
+        <td>BMI < 18.5</td>
+        <td>Underweight</td>
+    </tr>
+    <tr>
+        <td>18.5 &#8804; BMI < 25</td>
+        <td>Normal</td>
+    </tr>
+    <tr>
+        <td>25.0 &#8804; BMI < 30.0</td>
+        <td>Overweight</td>
+    </tr>
+    <tr>
+        <td>BMI &#8805 30.0</td>
+        <td>Obese</td>
+    </tr>
+    <tr>
+        <td><input type="text" id="weight" size="15"></td> <!-- lam nao de can chinh o text dung bang 1 bang -->
+        <td><input type="text" id="height" size="15"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="button" id="getResults" onclick="getBMI()" value="Get BMI"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><p align="center" id="results">Results</p></td>
+    </tr>
+<!-- 94/(1.72^2) ~ 31.8 !!!-->
+
+
+</table>
+
+
+<script>
+    //let weight = +prompt("Nhap can nang cua ban");
+    //let height = +prompt("Nhap chieu cao cua ban");
+    function getBMI()
+    {
+        let weight = +document.getElementById("weight").value;
+        let height = +document.getElementById("height").value;
+        let bmi = weight / (Math.pow(height, 2));
+
+        let results;
+        if (bmi < 18){
+            results = "Ket qua cua ban la: Underweight" + " (" + bmi.toString().substr(0,5) + ")";
+        }
+        else if(bmi >= 18.5 && bmi < 25){
+            results = "Ket qua cua ban la: Normal" + " (" + bmi.toString().substr(0,5) + ")";
+        }
+        else if(bmi >= 25 && bmi < 30){
+            results = "Ket qua cua ban la: Overweight" + " (" + bmi.toString().substr(0,5) + ")";
+        }
+        else {
+            results = "Ket qua cua ban la: Obese" + " (" + bmi.toString().substr(0,5) + ")";
+        }
+        document.getElementById("results").innerHTML = results;
+    }
+
+</script>
+
+<style>
+    td{
+        width: 200px;
+        height: 50px;
+    }
+    tr{
+        text-align: center;
+    }
+
+</style>
+
+</body>
+</html>

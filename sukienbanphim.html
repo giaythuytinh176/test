@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="docReady()">
+
+<img id="nobita" src="img/nobita.png" alt="anh bi loi" style="position:absolute;left:0; top:0;" height="400" width="320"/>
+
+<script>
+
+    // tai sao ham rightArrowPressed lai +5 px
+
+    function upArrowPressed()
+    {
+        let element = document.getElementById("nobita");
+        element.style.top = parseInt(element.style.top) - 5 + "px";
+    }
+    function downArrowPressed()
+    {
+        let element = document.getElementById("nobita");
+        element.style.top = parseInt(element.style.top) + 5 + "px";
+    }
+    function leftArrowPressed()
+    {
+        let element = document.getElementById("nobita");
+        element.style.left = parseInt(element.style.left) - 5 + "px";
+    }
+    function rightArrowPressed()
+    {
+        //debugger;
+        let element = document.getElementById("nobita");
+        element.style.left = parseInt(element.style.left) + 5 + "px";
+    }
+    function moveSelection(evt)
+    {
+        //debugger;
+        console.log(evt);
+        switch (evt.keyCode){
+            case 37:
+                leftArrowPressed();
+                break;
+            case 39:
+                rightArrowPressed();
+                break;
+            case 38:
+                upArrowPressed();
+                break;
+            case 40:
+                downArrowPressed();
+                break;
+
+        }
+
+    }
+    function moveSelection2(evt) {
+        //debugger;
+        console.log(evt);
+        switch (evt.key) {
+            case "ArrowLeft":
+                leftArrowPressed();
+                break;
+            case "ArrowRight":
+                rightArrowPressed();
+                break;
+            case "ArrowUp":
+                upArrowPressed();
+                break;
+            case "ArrowDown":
+                downArrowPressed();
+                break;
+
+        }
+    }
+    function docReady() {
+        //debugger;
+        window.addEventListener('keydown', moveSelection);
+    }
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

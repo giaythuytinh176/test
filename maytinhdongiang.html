@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 align="center">May tinh don gian</h1>
+<br>
+<table id="myTable" align="center" border="1px solid black" cellspacing="0">
+    <tr>
+        <td colspan="4"><textarea type="number" onchange="inputNumber()" id="put2Cal" placeholder="So can nhap" cols="15" rows="1"></textarea></td>
+    </tr>
+    <tr>
+        <td onclick="getNumber(1)">1</td>
+        <td onclick="getNumber(2)">2</td>
+        <td onclick="getNumber(3)">3</td>
+        <td onclick="getNumber('+')">+</td>
+    </tr>
+    <tr>
+        <td onclick="getNumber(4)">4</td>
+        <td onclick="getNumber(5)">5</td>
+        <td onclick="getNumber(6)">6</td>
+        <td onclick="getNumber('-')">-</td>
+    </tr>
+    <tr>
+        <td onclick="getNumber(7)">7</td>
+        <td onclick="getNumber(8)">8</td>
+        <td onclick="getNumber(9)">9</td>
+        <td onclick="getNumber('*')">*</td>
+    </tr>
+    <tr>
+        <td onclick="getNumber('C')">C</td>
+        <td onclick="getNumber(0)">0</td>
+        <td onclick="getNumber('=')">=</td>
+        <td onclick="getNumber('/')">/</td>
+    </tr>
+    
+    
+</table>
+
+<script>
+
+   // function inputNumber()
+    {
+       // let dataTable = document.getElementsByTagName("td")[0].innerHTML;
+       // let tDTable = document.getElementById("put2Cal").value;
+        //console.table(dataTable);
+       // console.table(tDTable);
+    }
+
+    function getNumber(operatorNumber)
+    {
+        //let oPorNu = document.getElementsByTagName("td");
+        //document.getElementById("put2Cal").value = oPorNu;
+        //let oPorNu = document.getElementById("1");
+        //let typeN = typeof (operatorNumber);
+        //alert(typeN)
+        //let typeN = operatorNumber;
+        document.getElementById("put2Cal").innerHTML += operatorNumber;
+        //let numBertoCal =  document.getElementById("put2Cal").innerHTML;
+
+        if (operatorNumber == "=")
+        {
+            //console.log(operatorNumber);
+            calculator();
+        }
+
+
+        //console.log(operatorNumber);
+
+    }
+
+    function calculator()
+    {
+        let numBertoCal  = document.getElementById("put2Cal").innerHTML;
+        let result = numBertoCal.replace("=", "");
+
+        //if (numBertoCal == ¸¸¸¸)
+
+        //console.log(result);
+        result = eval(result);
+        document.getElementById("put2Cal").innerHTML = result;
+    }
+
+
+</script>
+
+
+<style>
+    td{
+        width: 100px;
+        height: 100px;
+    }
+
+    tr{
+        text-align: center;
+        font-size: 50px;
+    }
+    textarea{
+        text-align: right;
+        color: blue;
+        font-size: 50px;
+    }
+
+</style>
+
+</body>
+</html>

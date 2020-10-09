@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<Table align="center" border="1px solid black" cellspacing="0">
+    <tr>
+        <td><img data-name="panda" id="1" src="img_animal/panda_1x1.jpg" onclick="changeSrc(this.id)"></td>
+    </tr>
+    <tr>
+        <td><img id="2" data-name="panda" src="img_animal/cat_2x1.jpg" onclick="changeSrc(this.id)"></td>
+    </tr>
+    <tr>
+        <td><img id="3" data-name="panda" src="img_animal/monkey_3x1.jpg" onclick="changeSrc(this.id)"></td>
+    <tr>
+      <td><img id="4" data-name="panda" src="img_animal/panda_4x1.jpg" onclick="changeSrc(this.id)"></td>
+    <tr>
+      <td><img id="5" data-name="panda" src="img_animal/monkey_5x1.jpg" onclick="changeSrc(this.id)"></td>
+    </tr>
+
+
+
+
+</Table>
+
+
+<script>
+
+    function changeSrc(imgID){
+        let dataName = document.getElementById(imgID).getAttribute("data-name");
+        //console.log(dataName);
+
+        if (dataName == "panda"){
+            document.getElementById(imgID).src = "img_animal/cat_"+imgID+"x1.jpg";
+            document.getElementById(imgID).setAttribute("data-name", "cat");
+        }
+        else if (dataName == "cat"){
+            document.getElementById(imgID).src = "img_animal/monkey_"+imgID+"x1.jpg";
+            document.getElementById(imgID).setAttribute("data-name", "monkey");
+        }
+        else {
+            document.getElementById(imgID).src = "img_animal/panda_"+imgID+"x1.jpg";
+            document.getElementById(imgID).setAttribute("data-name", "panda");
+        }
+    }
+
+
+
+</script>
+
+<style>
+    td{
+        width: 250px;
+        height: 100px;
+    }
+    img {
+        width: 500px;
+    }
+
+</style>
+</body>
+</html>

@@ -35,9 +35,9 @@
         <td onclick="getNumber('*')">*</td>
     </tr>
     <tr>
-        <td onclick="getNumber('C')">C</td>
+        <td onclick="removePreNum('C')">C</td>
         <td onclick="getNumber(0)">0</td>
-        <td onclick="getNumber('=')">=</td>
+        <td onclick="calculator()">=</td>
         <td onclick="getNumber('/')">/</td>
     </tr>
     
@@ -54,6 +54,11 @@
        // console.table(tDTable);
     }
 
+    function removePreNum()
+    {
+        document.getElementById("put2Cal").innerHTML = '';
+    }
+
     function getNumber(operatorNumber)
     {
         //let oPorNu = document.getElementsByTagName("td");
@@ -65,13 +70,6 @@
         document.getElementById("put2Cal").innerHTML += operatorNumber;
         //let numBertoCal =  document.getElementById("put2Cal").innerHTML;
 
-        if (operatorNumber == "=")
-        {
-            //console.log(operatorNumber);
-            calculator();
-        }
-
-
         //console.log(operatorNumber);
 
     }
@@ -79,12 +77,12 @@
     function calculator()
     {
         let numBertoCal  = document.getElementById("put2Cal").innerHTML;
-        let result = numBertoCal.replace("=", "");
+        //let result = numBertoCal.replace("=", "");
 
         //if (numBertoCal == ¸¸¸¸)
 
-        //console.log(result);
-        result = eval(result);
+        //console.log(numBertoCal);
+        result = eval(numBertoCal);
         document.getElementById("put2Cal").innerHTML = result;
     }
 

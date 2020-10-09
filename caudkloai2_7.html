@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Title</title>
+        </head>
+<body>
+
+<!--
+
+Bài 7: Giải phương trình bậc 2.
+
+Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không. Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.
+
+Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác. Điều kiện để a,b,c là cạnh của một tam giác là:
+
+a,b,c > 0
+a + b > c
+b + c > a
+a + c > b
+Bài 10: Viết chương trình tính giá điện.
+
+Bài 11: Viết chương trình tính thuế thu nhập cá nhân.
+
+Bài 12: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lãi con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.
+
+-->
+
+<script>
+
+    // giai pt cap 1 ax^2 + bx + c = 0
+    let a = prompt("Nhap a");
+    let b = prompt("Nhap b");
+    let c = prompt("Nhap c");
+
+    if (a == 0){
+        if (b != 0){
+            alert("pt co nghiem x=+-c/b");
+        }
+        else{
+            if (c != 0) alert("pt vo so nghiem");
+            else alert("pt co vo nghiem")
+        }
+    }
+    else{
+        let delTa = Math.pow(b,2) - 4*a*c;
+
+        if (delTa < 0){
+            alert("pt vo nghiem");
+        }
+        else if (delTa == 0){
+            alert("pt co nghiem x1=x2=" + -b/(2*a));
+        }
+        else{
+            let x1 = (-b + Math.pow(delTa, 0.5))/2;
+            let x2 = (-b - Math.pow(delTa, 0.5))/2;
+            alert("pt co nghiem dn:x1 =" + x1 )
+            alert("pt co nghiem dn:x2 =" + x2 )
+
+        }
+
+
+    }
+
+
+
+</script>
+
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>

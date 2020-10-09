@@ -15,19 +15,16 @@
 <p id="results"></p>
 
 <script>
-    function getDay()
-    {
+    function getDay() {
         let month = document.getElementById("month").value;
-        f (month < 0 || month > 12)
-        {
-            document.getElementById("results").innerHTML = "Thang " + month + " ko hop le." ;
+        if (month < 0 || month > 12) {
+            document.getElementById("results").innerHTML = "Thang " + month + " ko hop le.";
             return;
         }
-        i
+
         //debugger;
         //console.log(month);
-        switch (month)
-        {
+        switch (month) {
             case "4":// tai sao de so 4 rieng lai ko dc
             case "6":
             case "9":
@@ -35,16 +32,15 @@
                 document.getElementById("results").innerHTML = "So ngay trong thang " + month + " la: 30 ngay";
                 break;
             case "2":
-                document.getElementById("results").innerHTML = "So ngay trong thang "+ month + " la: 28 hoac 29 ngay";
+                document.getElementById("results").innerHTML = "So ngay trong thang " + month + " la: 28 hoac 29 ngay";
                 break;
             default:
-                document.getElementById("results").innerHTML = "So ngay trong thang "+ month + " la: 31 ngay";
-                //break dat o day co khac gi ko dat k
+                document.getElementById("results").innerHTML = "So ngay trong thang " + month + " la: 31 ngay";
+            //break dat o day co khac gi ko dat k
 
         }
 
     }
-
 
 
 </script>

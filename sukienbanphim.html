@@ -6,38 +6,38 @@
 </head>
 <body onload="docReady()">
 
-<img id="nobita" src="img/nobita.png" alt="anh bi loi" style="position:absolute;left:0; top:0;" height="400" width="320"/>
+<img id="nobita" src="img/nobita.png" alt="anh bi loi" style="position:absolute;left:0; top:0;" height="400"
+     width="320"/>
 
 <script>
 
     // tai sao ham rightArrowPressed lai +5 px
 
-    function upArrowPressed()
-    {
+    function upArrowPressed() {
         let element = document.getElementById("nobita");
         element.style.top = parseInt(element.style.top) - 5 + "px";
     }
-    function downArrowPressed()
-    {
+
+    function downArrowPressed() {
         let element = document.getElementById("nobita");
         element.style.top = parseInt(element.style.top) + 5 + "px";
     }
-    function leftArrowPressed()
-    {
+
+    function leftArrowPressed() {
         let element = document.getElementById("nobita");
         element.style.left = parseInt(element.style.left) - 5 + "px";
     }
-    function rightArrowPressed()
-    {
+
+    function rightArrowPressed() {
         //debugger;
         let element = document.getElementById("nobita");
         element.style.left = parseInt(element.style.left) + 5 + "px";
     }
-    function moveSelection(evt)
-    {
+
+    function moveSelection(evt) {
         //debugger;
         console.log(evt);
-        switch (evt.keyCode){
+        switch (evt.keyCode) {
             case 37:
                 leftArrowPressed();
                 break;
@@ -54,6 +54,7 @@
         }
 
     }
+
     function moveSelection2(evt) {
         //debugger;
         console.log(evt);
@@ -73,15 +74,11 @@
 
         }
     }
+
     function docReady() {
         //debugger;
         window.addEventListener('keydown', moveSelection);
     }
-
-
-
-
-
 
 
 </script>

@@ -5,19 +5,21 @@
     <title>Title</title>
 </head>
 <style>
-    td{
+    td {
         width: 50px;
         height: 50px;
     }
-    tr:nth-child(odd) td:nth-child(even){
+
+    tr:nth-child(odd) td:nth-child(even) {
         background-color: black;
     }
 
-    tr:nth-child(even) td:nth-child(odd){
+    tr:nth-child(even) td:nth-child(odd) {
         background-color: black;
     }
+
     td.special {
-        background-color: pink!important;
+        background-color: pink !important;
         border: none;
         text-align: center;
         font-weight: 600;
@@ -27,7 +29,7 @@
 <body>
 <h1>Chess Board</h1>
 <table border="1px solid black" cellspacing="0">
-<!--    tr>td.special*9 -->
+    <!--    tr>td.special*9 -->
     <tr>
         <td class="special"></td>
         <td class="special">A</td>
@@ -39,7 +41,7 @@
         <td class="special">G</td>
         <td class="special">H</td>
     </tr>
-<!--    tr*8>td.special+td*8 -->
+    <!--    tr*8>td.special+td*8 -->
     <tr>
         <td class="special"></td>
         <td></td>

@@ -9,7 +9,7 @@
 <form>
     <img src="img/bienkieudulieutoantu.png" id="ball" width="200px" alt="anh bi loi~"/>
     <br>Click button below to move the image to right
-    <br><input type="button" value="Move right!" onclick="moveRight();" />
+    <br><input type="button" value="Move right!" onclick="moveRight();"/>
 
 
 </form>
@@ -23,10 +23,9 @@
     imgObj.style.left = '0px';
 
     function moveRight() {
-      // debugger;
+        // debugger;
         imgObj.style.left = parseInt(imgObj.style.left) + 20 + 'px';
     }
-
 
 
 </script>

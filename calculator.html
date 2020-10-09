@@ -6,13 +6,14 @@
 </head>
 <body>
 <style>
-    td{
+    td {
         width: 75px;
         height: 75px;
         text-align: center;
         font-size: 30px;
     }
-    #screen{
+
+    #screen {
         text-align: right;
     }
 </style>
@@ -53,24 +54,27 @@
 </table>
 <script>
     let screen = document.getElementById("screen")
+
     function clickCell(value) {
         screen.innerHTML += value;
     }
+
     function cal() {
         let str = screen.innerHTML;
         let result = eval(str);
-        screen.innerHTML =result;
+        screen.innerHTML = result;
     }
+
     function ac() {
         screen.innerHTML = "";
     }
+
     function del() {
         let str = screen.innerHTML;
-        let res = str.substring(0,str.length-1);
+        let res = str.substring(0, str.length - 1);
         screen.innerHTML = res;
     }
 </script>
-
 
 
 </body>

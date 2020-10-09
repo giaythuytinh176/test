@@ -8,12 +8,9 @@
 
 <script>
     let year = parseInt(prompt("Nhap nam ban can kiem tra."));
-    if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)))
-    {
+    if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
         alert("Nam " + year + " la nam nhuan");
-    }
-    else
-    {
+    } else {
         alert("Nam " + year + " ko phai nam nhuan");
     }
 

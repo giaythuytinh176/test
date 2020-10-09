@@ -6,7 +6,11 @@
 </head>
 <body>
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <Table align="center" border="1px solid black" cellspacing="0">
     <tr>
@@ -18,34 +22,28 @@
     <tr>
         <td><img id="3" data-name="monkey" src="img_animal/monkey_3x1.jpg" onclick="changeSrc(this.id)"></td>
     <tr>
-      <td><img id="4" data-name="panda" src="img_animal/panda_4x1.jpg" onclick="changeSrc(this.id)"></td>
+        <td><img id="4" data-name="panda" src="img_animal/panda_4x1.jpg" onclick="changeSrc(this.id)"></td>
     <tr>
-      <td><img id="5" data-name="monkey" src="img_animal/monkey_5x1.jpg" onclick="changeSrc(this.id)"></td>
+        <td><img id="5" data-name="monkey" src="img_animal/monkey_5x1.jpg" onclick="changeSrc(this.id)"></td>
     </tr>
-
-
-
-
 </Table>
 
 
 <script>
 
-    function changeSrc(imgID){
+    function changeSrc(imgID) {
         let dataName = document.getElementById(imgID).getAttribute("data-name");
         //console.log(dataName);
         //debugger;
 
-        if (dataName == "panda"){
-            document.getElementById(imgID).src = "img_animal/cat_"+imgID+"x1.jpg";
+        if (dataName == "panda") {
+            document.getElementById(imgID).src = "img_animal/cat_" + imgID + "x1.jpg";
             document.getElementById(imgID).setAttribute("data-name", "cat");
-        }
-        else if (dataName == "cat"){
-            document.getElementById(imgID).src = "img_animal/monkey_"+imgID+"x1.jpg";
+        } else if (dataName == "cat") {
+            document.getElementById(imgID).src = "img_animal/monkey_" + imgID + "x1.jpg";
             document.getElementById(imgID).setAttribute("data-name", "monkey");
-        }
-        else {
-            document.getElementById(imgID).src = "img_animal/panda_"+imgID+"x1.jpg";
+        } else {
+            document.getElementById(imgID).src = "img_animal/panda_" + imgID + "x1.jpg";
             document.getElementById(imgID).setAttribute("data-name", "panda");
         }
 
@@ -53,7 +51,7 @@
 
     }
 
-    function checkMatch(){
+    function checkMatch() {
         //debugger
         let checkAnimal1 = document.getElementById(1).getAttribute("data-name");
         let checkAnimal2 = document.getElementById(2).getAttribute("data-name");
@@ -66,15 +64,12 @@
         console.log(checkAnimal4);
         console.log(checkAnimal5);
 
-        if ((checkAnimal1 == checkAnimal2) && (checkAnimal2 == checkAnimal3) && (checkAnimal3 == checkAnimal4) && (checkAnimal4 == checkAnimal5))
-        {
-            if (checkAnimal1 == "panda"){
+        if ((checkAnimal1 == checkAnimal2) && (checkAnimal2 == checkAnimal3) && (checkAnimal3 == checkAnimal4) && (checkAnimal4 == checkAnimal5)) {
+            if (checkAnimal1 == "panda") {
                 alert("Day la panda.")
-            }
-            else if (checkAnimal1 == "monkey"){
+            } else if (checkAnimal1 == "monkey") {
                 alert("Day la monkey.")
-            }
-            else {
+            } else {
                 alert("Day la cat.")
             }
         }
@@ -84,10 +79,11 @@
 </script>
 
 <style>
-    td{
+    td {
         width: 250px;
         height: 100px;
     }
+
     img {
         width: 500px;
     }

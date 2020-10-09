@@ -37,35 +37,30 @@ Bài 12: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lãi con
     let b = prompt("Nhap b");
     let c = prompt("Nhap c");
 
-    if (a == 0){
-        if (b != 0){
+    if (a == 0) {
+        if (b != 0) {
             alert("pt co nghiem x=+-c/b");
-        }
-        else{
+        } else {
             if (c != 0) alert("pt vo so nghiem");
             else alert("pt co vo nghiem")
         }
-    }
-    else{
-        let delTa = Math.pow(b,2) - 4*a*c;
+    } else {
+        let delTa = Math.pow(b, 2) - 4 * a * c;
 
-        if (delTa < 0){
+        if (delTa < 0) {
             alert("pt vo nghiem");
-        }
-        else if (delTa == 0){
-            alert("pt co nghiem x1=x2=" + -b/(2*a));
-        }
-        else{
-            let x1 = (-b + Math.pow(delTa, 0.5))/2;
-            let x2 = (-b - Math.pow(delTa, 0.5))/2;
-            alert("pt co nghiem dn:x1 =" + x1 )
-            alert("pt co nghiem dn:x2 =" + x2 )
+        } else if (delTa == 0) {
+            alert("pt co nghiem x1=x2=" + -b / (2 * a));
+        } else {
+            let x1 = (-b + Math.pow(delTa, 0.5)) / 2;
+            let x2 = (-b - Math.pow(delTa, 0.5)) / 2;
+            alert("pt co nghiem dn:x1 =" + x1)
+            alert("pt co nghiem dn:x2 =" + x2)
 
         }
 
 
     }
-
 
 
 </script>

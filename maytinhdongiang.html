@@ -14,7 +14,8 @@
 <br>
 <table id="myTable" align="center" border="1px solid black" cellspacing="0">
     <tr>
-        <td colspan="4"><textarea type="number" onchange="inputNumber()" id="put2Cal" placeholder="So can nhap" cols="15" rows="1"></textarea></td>
+        <td colspan="4"><textarea type="number" onchange="inputNumber()" id="put2Cal" placeholder="So can nhap"
+                                  cols="15" rows="1"></textarea></td>
     </tr>
     <tr>
         <td onclick="getNumber(1)">1</td>
@@ -40,27 +41,25 @@
         <td onclick="calculator()">=</td>
         <td onclick="getNumber('/')">/</td>
     </tr>
-    
-    
+
+
 </table>
 
 <script>
 
-   // function inputNumber()
+    // function inputNumber()
     {
-       // let dataTable = document.getElementsByTagName("td")[0].innerHTML;
-       // let tDTable = document.getElementById("put2Cal").value;
+        // let dataTable = document.getElementsByTagName("td")[0].innerHTML;
+        // let tDTable = document.getElementById("put2Cal").value;
         //console.table(dataTable);
-       // console.table(tDTable);
+        // console.table(tDTable);
     }
 
-    function removePreNum()
-    {
+    function removePreNum() {
         document.getElementById("put2Cal").innerHTML = '';
     }
 
-    function getNumber(operatorNumber)
-    {
+    function getNumber(operatorNumber) {
         //let oPorNu = document.getElementsByTagName("td");
         //document.getElementById("put2Cal").value = oPorNu;
         //let oPorNu = document.getElementById("1");
@@ -74,9 +73,8 @@
 
     }
 
-    function calculator()
-    {
-        let numBertoCal  = document.getElementById("put2Cal").innerHTML;
+    function calculator() {
+        let numBertoCal = document.getElementById("put2Cal").innerHTML;
         //let result = numBertoCal.replace("=", "");
 
         //if (numBertoCal == ¸¸¸¸)
@@ -91,16 +89,17 @@
 
 
 <style>
-    td{
+    td {
         width: 100px;
         height: 100px;
     }
 
-    tr{
+    tr {
         text-align: center;
         font-size: 50px;
     }
-    textarea{
+
+    textarea {
         text-align: right;
         color: blue;
         font-size: 50px;

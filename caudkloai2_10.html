@@ -25,40 +25,25 @@ Bài 12: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lãi con
 -->
 
 <script>
-//https://vietnamnet.vn/vn/kinh-doanh/tai-chinh/infographic/cach-tinh-tien-dien-sinh-hoat-theo-quy-dinh-moi-551909-i1.html
+    //https://vietnamnet.vn/vn/kinh-doanh/tai-chinh/infographic/cach-tinh-tien-dien-sinh-hoat-theo-quy-dinh-moi-551909-i1.html
     let soDienthangtrc = +prompt("Nhap so dien thang trc");
     let soDienthangsau = +prompt("Nhap so dien thang sau ");
     let sodiencantra = +(soDienthangsau - soDienthangtrc);
 
-    if (sodiencantra > 0 && sodiencantra <= 50)
-    {
+    if (sodiencantra > 0 && sodiencantra <= 50) {
         debugger
-        alert("So tien la: " + ((sodiencantra * 1.678 + sodiencantra * 1.678 * 0.1)*1000));
-    }
-
-    else if (sodiencantra > 50 && sodiencantra <= 100)
+        alert("So tien la: " + ((sodiencantra * 1.678 + sodiencantra * 1.678 * 0.1) * 1000));
+    } else if (sodiencantra > 50 && sodiencantra <= 100) {
+        alert("So tien la: " + ((sodiencantra * 1.678 + sodiencantra * 1.678 * 0.1) * 1000));
+    } else if (sodiencantra > 100 && sodiencantra <= 200) {
+        alert("So tien la: " + ((sodiencantra * 2.014 + sodiencantra * 2.014 * 0.1) * 1000));
+    } else if (sodiencantra > 200 && sodiencantra <= 300) {
+        alert("So tien la: " + ((sodiencantra * 2.536 + sodiencantra * 2.536 * 0.1) * 1000));
+    } else if (sodiencantra > 300 && sodiencantra <= 400) {
+        alert("So tien la: " + ((sodiencantra * 2.834 + sodiencantra * 2.834 * 0.1) * 1000));
+    } else// if (sodiencantra > 400)
     {
-        alert("So tien la: " + ((sodiencantra * 1.678+ sodiencantra * 1.678 * 0.1)*1000));
-    }
-
-    else if (sodiencantra > 100 && sodiencantra <= 200)
-    {
-        alert("So tien la: " + ((sodiencantra * 2.014 + sodiencantra * 2.014 * 0.1)*1000));
-    }
-
-    else if (sodiencantra > 200 && sodiencantra <= 300)
-    {
-        alert("So tien la: " + ((sodiencantra * 2.536+ sodiencantra * 2.536 * 0.1)*1000));
-    }
-
-    else if (sodiencantra > 300 && sodiencantra <= 400)
-    {
-        alert("So tien la: " + ((sodiencantra * 2.834 + sodiencantra * 2.834*0.1)*1000));
-    }
-
-    else// if (sodiencantra > 400)
-    {
-        alert("So tien la: " + ((sodiencantra * 2.927 + sodiencantra * 2.927 * 0.1)*1000));
+        alert("So tien la: " + ((sodiencantra * 2.927 + sodiencantra * 2.927 * 0.1) * 1000));
     }
 
 

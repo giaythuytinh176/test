@@ -44,7 +44,7 @@
     <tr>
         <td colspan="2"><p align="center" id="results">Results</p></td>
     </tr>
-<!-- 94/(1.72^2) ~ 31.8 !!!-->
+    <!-- 94/(1.72^2) ~ 31.8 !!!-->
 
 
 </table>
@@ -53,24 +53,20 @@
 <script>
     //let weight = +prompt("Nhap can nang cua ban");
     //let height = +prompt("Nhap chieu cao cua ban");
-    function getBMI()
-    {
+    function getBMI() {
         let weight = +document.getElementById("weight").value;
         let height = +document.getElementById("height").value;
         let bmi = weight / (Math.pow(height, 2));
 
         let results;
-        if (bmi < 18){
-            results = "Ket qua cua ban la: Underweight" + " (" + bmi.toString().substr(0,5) + ")";
-        }
-        else if(bmi >= 18.5 && bmi < 25){
-            results = "Ket qua cua ban la: Normal" + " (" + bmi.toString().substr(0,5) + ")";
-        }
-        else if(bmi >= 25 && bmi < 30){
-            results = "Ket qua cua ban la: Overweight" + " (" + bmi.toString().substr(0,5) + ")";
-        }
-        else {
-            results = "Ket qua cua ban la: Obese" + " (" + bmi.toString().substr(0,5) + ")";
+        if (bmi < 18) {
+            results = "Ket qua cua ban la: Underweight" + " (" + bmi.toString().substr(0, 5) + ")";
+        } else if (bmi >= 18.5 && bmi < 25) {
+            results = "Ket qua cua ban la: Normal" + " (" + bmi.toString().substr(0, 5) + ")";
+        } else if (bmi >= 25 && bmi < 30) {
+            results = "Ket qua cua ban la: Overweight" + " (" + bmi.toString().substr(0, 5) + ")";
+        } else {
+            results = "Ket qua cua ban la: Obese" + " (" + bmi.toString().substr(0, 5) + ")";
         }
         document.getElementById("results").innerHTML = results;
     }
@@ -78,11 +74,12 @@
 </script>
 
 <style>
-    td{
+    td {
         width: 200px;
         height: 50px;
     }
-    tr{
+
+    tr {
         text-align: center;
     }
 

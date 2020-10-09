@@ -101,29 +101,23 @@
         let srcImg4 = document.getElementsByTagName("img")[3].src;
         let srcImg5 = document.getElementsByTagName("img")[4].src;
 
-        let nameImg1 = srcImg1.slice(41,46);
-        let nameImg2 = srcImg2.slice(41,46);
-        let nameImg3 = srcImg3.slice(41,46);
-        let nameImg4 = srcImg4.slice(41,46);
-        let nameImg5 = srcImg5.slice(41,46);
+        let nameImg1 = srcImg1.slice(41, 46);
+        let nameImg2 = srcImg2.slice(41, 46);
+        let nameImg3 = srcImg3.slice(41, 46);
+        let nameImg4 = srcImg4.slice(41, 46);
+        let nameImg5 = srcImg5.slice(41, 46);
         console.log(srcImg1);
         console.log(srcImg2);
         console.log(srcImg3);
         console.log(srcImg4);
         console.log(srcImg5);
 
-        if ((nameImg1 == nameImg5) && (nameImg1 == nameImg2) && (nameImg2 == nameImg3) && (nameImg3 == nameImg4) && (nameImg4 = nameImg5))
-        {
-            if (nameImg1 == "panda")
-            {
+        if ((nameImg1 == nameImg5) && (nameImg1 == nameImg2) && (nameImg2 == nameImg3) && (nameImg3 == nameImg4) && (nameImg4 = nameImg5)) {
+            if (nameImg1 == "panda") {
                 alert("You are so smart. This is a Panda.");
-            }
-            else if (nameImg1 == "monke")
-            {
+            } else if (nameImg1 == "monke") {
                 alert("You are so smart. This is a Monkey.");
-            }
-            else if (nameImg1 == "funny")
-            {
+            } else if (nameImg1 == "funny") {
                 alert("You are so smart. This is a Cat.");
             }
         }

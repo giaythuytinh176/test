@@ -9,25 +9,26 @@
 <br>
 <br>
 <br>
-<h1><center>Doi tien tu USD sang VND va nguoc lai</center></h1>
+<h1>
+    <center>Doi tien tu USD sang VND va nguoc lai</center>
+</h1>
 <br>
 <br>
 
 <form>
-Amount <input type="text" id="aMount"  placeholder="Nhap so tien can doi" size="20">
+    Amount <input type="text" id="aMount" placeholder="Nhap so tien can doi" size="20">
     From Currency
-<select id="fromCurrency">
-    <option value="usd">USD</option>
-    <option value="vnd">Viet Nam Dong</option>
-</select>
+    <select id="fromCurrency">
+        <option value="usd">USD</option>
+        <option value="vnd">Viet Nam Dong</option>
+    </select>
     To Currency
-<select id="toCurrency">
-    <option value="vnd">Viet Nam Dong</option>
-    <option value="usd">USD</option>
-</select>
+    <select id="toCurrency">
+        <option value="vnd">Viet Nam Dong</option>
+        <option value="usd">USD</option>
+    </select>
 
-<button type="button" value="Convert" onclick="convertCur()">Convert</button>
-
+    <button type="button" value="Convert" onclick="convertCur()">Convert</button>
 
 
 </form>
@@ -39,13 +40,12 @@ Amount <input type="text" id="aMount"  placeholder="Nhap so tien can doi" size="
     //console.log(fromCur);
     //console.log(toCur);
 
-    function convertCur()
-    {
+    function convertCur() {
         let aMount = document.getElementById("aMount").value;
         let fromCur = document.getElementById("fromCurrency").value;
         let toCur = document.getElementById("toCurrency").value;
 
-        if (!aMount.length || isNaN(aMount)){
+        if (!aMount.length || isNaN(aMount)) {
             document.write("Ban can nhap so tien can doi or so tien ko hop le.");
             return;
         }
@@ -54,28 +54,19 @@ Amount <input type="text" id="aMount"  placeholder="Nhap so tien can doi" size="
 
         console.log(fromCur);
         console.log(toCur);
-        if (fromCur == "vnd" && toCur == "usd")
-        {
+        if (fromCur == "vnd" && toCur == "usd") {
             let convertAmount = aMount / 23000;
             document.write("Doi " + aMount + " VND sang USD la: " + convertAmount + " dollar.");
-        }
-        else if (fromCur == "vnd" && toCur == "vnd")
-        {
+        } else if (fromCur == "vnd" && toCur == "vnd") {
             let convertAmount = aMount * 1;
             document.write("Doi " + aMount + " VND sang VND la: " + convertAmount + " Nghin dong.");
-        }
-        else if (fromCur == "usd" && toCur == "usd")
-        {
+        } else if (fromCur == "usd" && toCur == "usd") {
             let convertAmount = aMount * 1;
             document.write("Doi " + aMount + " USD sang USD la: " + convertAmount + " do.");
-        }
-        else if (fromCur == "usd" && toCur == "vnd")
-        {
+        } else if (fromCur == "usd" && toCur == "vnd") {
             let convertAmount = aMount * 23000;
             document.write("Doi " + aMount + " USD sang VND la: " + convertAmount + " Nghin dong.");
-        }
-        else
-        {
+        } else {
             alert("Du lieu nhap vao ko hop le.");
         }
 

@@ -13,14 +13,14 @@
         <td><img data-name="panda" id="1" src="img_animal/panda_1x1.jpg" onclick="changeSrc(this.id)"></td>
     </tr>
     <tr>
-        <td><img id="2" data-name="panda" src="img_animal/cat_2x1.jpg" onclick="changeSrc(this.id)"></td>
+        <td><img id="2" data-name="cat" src="img_animal/cat_2x1.jpg" onclick="changeSrc(this.id)"></td>
     </tr>
     <tr>
-        <td><img id="3" data-name="panda" src="img_animal/monkey_3x1.jpg" onclick="changeSrc(this.id)"></td>
+        <td><img id="3" data-name="monkey" src="img_animal/monkey_3x1.jpg" onclick="changeSrc(this.id)"></td>
     <tr>
       <td><img id="4" data-name="panda" src="img_animal/panda_4x1.jpg" onclick="changeSrc(this.id)"></td>
     <tr>
-      <td><img id="5" data-name="panda" src="img_animal/monkey_5x1.jpg" onclick="changeSrc(this.id)"></td>
+      <td><img id="5" data-name="monkey" src="img_animal/monkey_5x1.jpg" onclick="changeSrc(this.id)"></td>
     </tr>
 
 
@@ -34,6 +34,7 @@
     function changeSrc(imgID){
         let dataName = document.getElementById(imgID).getAttribute("data-name");
         //console.log(dataName);
+        //debugger;
 
         if (dataName == "panda"){
             document.getElementById(imgID).src = "img_animal/cat_"+imgID+"x1.jpg";
@@ -47,8 +48,37 @@
             document.getElementById(imgID).src = "img_animal/panda_"+imgID+"x1.jpg";
             document.getElementById(imgID).setAttribute("data-name", "panda");
         }
+
+        checkMatch();
+
     }
 
+    function checkMatch(){
+        //debugger
+        let checkAnimal1 = document.getElementById(1).getAttribute("data-name");
+        let checkAnimal2 = document.getElementById(2).getAttribute("data-name");
+        let checkAnimal3 = document.getElementById(3).getAttribute("data-name");
+        let checkAnimal4 = document.getElementById(4).getAttribute("data-name");
+        let checkAnimal5 = document.getElementById(5).getAttribute("data-name");
+        console.log(checkAnimal1);
+        console.log(checkAnimal2);
+        console.log(checkAnimal3);
+        console.log(checkAnimal4);
+        console.log(checkAnimal5);
+
+        if ((checkAnimal1 == checkAnimal2) && (checkAnimal2 == checkAnimal3) && (checkAnimal3 == checkAnimal4) && (checkAnimal4 == checkAnimal5))
+        {
+            if (checkAnimal1 == "panda"){
+                alert("Day la panda.")
+            }
+            else if (checkAnimal1 == "monkey"){
+                alert("Day la monkey.")
+            }
+            else {
+                alert("Day la cat.")
+            }
+        }
+    }
 
 
 </script>

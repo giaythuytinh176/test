@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f66e2301-0b18-4077-9f2a-80188a65341f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +34,11 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,6 +54,7 @@
       <workItem from="1602396385123" duration="2093000" />
       <workItem from="1602409820608" duration="4006000" />
       <workItem from="1602415335276" duration="96000" />
+      <workItem from="1602539700964" duration="4530000" />
     </task>
     <servers />
   </component>
@@ -65,6 +67,14 @@
     </state>
     <state x="781" y="193" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1602348659191" />
     <state x="286" y="98" key="SettingsEditor/0.23.1440.798@0.23.1440.798" timestamp="1602356212556" />
+    <state x="711" y="229" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602544259753">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="711" y="229" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1602544259753" />
+    <state x="861" y="342" key="run.anything.popup" timestamp="1602545082521">
+      <screen x="0" y="23" width="2560" height="1318" />
+    </state>
+    <state x="861" y="342" key="run.anything.popup/0.23.2560.1318@0.23.2560.1318" timestamp="1602545082521" />
     <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1602335628362">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

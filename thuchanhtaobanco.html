@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<h1> Caro Game Simple</h1>
+<br>
+<hr>
+<br>
+
+<script>
+    let m = 5;
+    let n = 6;
+    //let arr = new Array(n).fill(new Array(m));
+
+    let arr = new Array(n);
+    for (let i = 0; i < n; i++) {
+        document.write("<br>&nbsp;&nbsp;");
+        arr[i] = new Array(m);
+        for (let j = 0; j < m; j++) {
+            arr[i][j] = 0;
+            //document.write("<p id=\"results\"></p>");
+            document.write(arr[i][j] + "&nbsp;&nbsp;&nbsp;");
+        }
+    }
+
+    // for (let i = 0; i < arr.length; i++) {
+    //     document.write("<br>&nbsp;&nbsp;");
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         arr[i][j] = 0;
+    //         //console.log(arr);
+    //         document.write(arr[i][j] + "&nbsp;&nbsp;&nbsp;");
+    //     }
+    // }
+
+    let data = "<br/><br/><input type='button' value='Change Value' onclick='changeValue()'>"
+    document.write(data);
+
+    function TaoSoNgauNhien(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    function changeValue() {
+        let toadoi = TaoSoNgauNhien(0, n);
+        let toadoj = TaoSoNgauNhien(0, m);
+        let inPut = +prompt("Nhap gia tri cua mang " + toadoi + "x" + toadoj);
+
+        for (let i = 0; i < n; i++) {
+            document.write("<br>&nbsp;&nbsp;");
+            arr[i] = new Array(m);
+            for (let j = 0; j < m; j++) {
+                arr[i][j] = 0;
+                arr[toadoi][toadoj] = inPut;
+                //document.getElementById("results").innerHTML = arr[toadoi][toadoj] + "&nbsp;&nbsp;&nbsp;";
+                document.write(arr[i][j] + "&nbsp;&nbsp;&nbsp;");
+            }
+        }
+
+    }
+
+
+</script>
+
+</body>
+</html>

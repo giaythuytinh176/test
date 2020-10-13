@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8/>
+    <title>JS Bin</title>
+    <style>
+        body {
+            padding-top: 50px
+        }
+    </style>
+</head>
+
+<body>
+<input type="text" id="txtValue"/>
+<input type="button" id="btnAdd" value="Add" onclick="add_element_to_array();"/>
+<input type="button" id="btnDisplay" value="Display" onclick="display_array();"/>
+<div id="result"></div>
+</body>
+
+<script>
+
+    let x = 0;
+    let array = Array();
+
+    function display_array() {
+        debugger;
+        let e = "<hr/>";
+        for (let i = 0; i < array.length; i++) {
+            e += "Element " + i + " = " + array[i] + "<br/>";
+        }
+        document.getElementById("result").innerHTML = e;
+    }
+
+    function add_element_to_array() {
+        debugger;
+
+        console.log(array);
+        array[x] = document.getElementById("txtValue").value;
+        document.getElementById("result").innerHTML = "Element: " + array[x] + " Added at index " + x;
+        let y = x++;
+        console.log(y);
+        document.getElementById("txtValue").value = "";
+
+        console.log(array);
+    }
+
+</script>
+
+</html>

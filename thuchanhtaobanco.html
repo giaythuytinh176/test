@@ -5,65 +5,64 @@
     <title>Title</title>
 </head>
 <body>
-
-
-<h1> Caro Game Simple</h1>
+<h3> Caro Game Simple</h3>
 <br>
 <hr>
-<br>
+<p id="carogame" /></p>
+<input type="button" value="Change Value" onclick="changeValue()">
+
+
+</body>
 
 <script>
-    let m = 5;
-    let n = 6;
-    //let arr = new Array(n).fill(new Array(m));
 
-    let arr = new Array(n);
+    debugger
+    let n = 8;
+    let m = 6;
+    let b = document.getElementById("carogame");
+
+    let data = "";
+    let arr = [];
+
     for (let i = 0; i < n; i++) {
-        document.write("<br>&nbsp;&nbsp;");
         arr[i] = new Array(m);
+        data += "<br>&nbsp;&nbsp;";
         for (let j = 0; j < m; j++) {
-            arr[i][j] = 0;
-            //document.write("<p id=\"results\"></p>");
-            document.write(arr[i][j] + "&nbsp;&nbsp;&nbsp;");
+            arr[i][j] = i + j;// toa do dong i cot j, se co ket qua la i + j
+            //arr[i][j] = i * j;
+            data += arr[i][j] + "&nbsp;&nbsp;&nbsp;";
         }
     }
-
-    // for (let i = 0; i < arr.length; i++) {
-    //     document.write("<br>&nbsp;&nbsp;");
-    //     for (let j = 0; j < arr[i].length; j++) {
-    //         arr[i][j] = 0;
-    //         //console.log(arr);
-    //         document.write(arr[i][j] + "&nbsp;&nbsp;&nbsp;");
-    //     }
-    // }
-
-    let data = "<br/><br/><input type='button' value='Change Value' onclick='changeValue()'>"
-    document.write(data);
+    b.innerHTML = data;
 
     function TaoSoNgauNhien(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
     }
 
     function changeValue() {
-        let toadoi = TaoSoNgauNhien(0, n);
-        let toadoj = TaoSoNgauNhien(0, m);
-        let inPut = +prompt("Nhap gia tri cua mang " + toadoi + "x" + toadoj);
-
-        for (let i = 0; i < n; i++) {
-            document.write("<br>&nbsp;&nbsp;");
-            arr[i] = new Array(m);
-            for (let j = 0; j < m; j++) {
-                arr[i][j] = 0;
-                arr[toadoi][toadoj] = inPut;
-                //document.getElementById("results").innerHTML = arr[toadoi][toadoj] + "&nbsp;&nbsp;&nbsp;";
-                document.write(arr[i][j] + "&nbsp;&nbsp;&nbsp;");
-            }
+        let toadoi = +prompt("Nhap vi tri can thay doi cua i trong khoang (0, " + (n-1) + ")" );
+        if (toadoi < 0 || toadoi > n) {
+            alert("Moi nhap lai toa do dong`");
+            return;
+        }
+        let toadoj= +prompt("Nhap vi tri can thay doi cua j trong khoang (0, " + (m-1) + ")" );
+        if (toadoj < 0 || toadoj > m) {
+            alert("Moi nhap lai toa do cot`");
+            return;
         }
 
+        data = "";
+        arr[toadoi][toadoj] = "x";
+        for (let i = 0; i < n; i++) {
+            data += "<br>&nbsp;&nbsp;";
+            for (let j = 0; j < m; j++) {
+                data += arr[i][j] + "&nbsp;&nbsp;&nbsp;";
+            }
+        }
+        b.innerHTML = data;
     }
 
 
 </script>
 
-</body>
 </html>

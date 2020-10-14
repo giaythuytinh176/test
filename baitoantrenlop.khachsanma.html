@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    let luong = 0;
+    let khongArr = [];
+    let delArr = [];
+    let keyinore = [];
+    let delrow = [];
+    let delcol = [];
+    let arr = [[12, 7, 0],
+              [0, 11, 9],
+              [5, 7, 8],
+              [11, 10, 9]
+    ];
+
+    let sum = 0;
+    for (let i = 0; i < arr[i].length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j][i] == 0) {
+                break;
+            }
+            console.log(j + "+" + i)
+            sum += arr[j][i];
+        }
+    }
+    document.write(sum);
+    //
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         if (arr[i][j] == 0) {
+    //             delrow.push([i]);
+    //             delcol.push([j]);
+    //             delArr.push([i, j]);
+    //         }
+    //     }
+    // }
+    // for (i = 0; i < delArr.length; i++) {
+    //     for (let j = 0; j < delArr[i].length; j++) {
+    //         //console.log(delArr[i][j]);
+    //         if (delArr[i][j] % 2 == 0) {
+    //             console.log(delArr[i][j]);
+    //         }
+    //     }
+    // }
+
+    // console.log(delrow);
+    // console.log(delcol);
+    // console.log(delArr);
+    // for (let i = 0; i < delrow.length; i++) {
+    //     console.log(delrow[i]);
+    //
+    //     for (let j = 0; j < delcol.length; j++) {
+    //         console.log(delrow[j])
+    //         // if (i !== j) {
+    //         //     console.log(i + "+ " + j)
+    //         // }
+    //     }
+    // }
+    //                delArr.push(arr[j][keyinore[i]]);
+
+    //console.log(khongArr)
+    //let newDelArr = delArr.join(",");
+    //let newArr = arr.join(",");
+    //console.log(newArr);
+    //document.write(newArr);
+    // console.log(newDelArr);
+
+    // console.log(delArr);
+
+
+</script>
+
+</body>
+</html>

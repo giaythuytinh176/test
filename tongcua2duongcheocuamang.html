@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    let arr = [[1, 3, 4, 5], [-2, -3, -4, -5], [8, 9, 10, 11], [0, 2, 8, 9]];
+    let sumXuong = 0;
+    let sumTren = 0;
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+        for (let j = 0; j < arr[i].length; j++) {
+            if (i == j) {
+                sumXuong += arr[i][j];
+            }
+            if (i + j == (arr.length - 1)) {
+                sumTren += arr[i][j];
+                // console.log(arr[i][j]);
+            }
+        }
+    }
+    //console.log(arr);
+    document.write(sumXuong + sumTren);
+
+    // let arr = new Array(4);
+    // let sumXuong = 0;
+    // let sumTren = 0;
+    // for (let i = 0; i < arr.length; i++) {
+    //     arr = new Array([1, 3, 4, 5], [-2, -3, -4, -5], [8, 9, 10, 11], [0, 2, 8, 9])
+    //     console.log(arr[i])
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         if (i == j) {
+    //             sumXuong += arr[i][j];
+    //         }
+    //         if (i + j == (arr.length - 1)) {
+    //             sumTren += arr[i][j];
+    //             // console.log(arr[i][j]);
+    //         }
+    //     }
+    // }
+</script>
+
+
+</body>
+</html>
